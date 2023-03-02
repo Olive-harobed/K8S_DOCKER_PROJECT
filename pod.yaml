@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-pod
+  labels:
+    name: web-pod
+    app: portfolio-app
+spec:
+  containers:
+    - name: web-pod
+      image: oliveharobed/personal-website:v2
+      ports:
+        - containerPort: 80

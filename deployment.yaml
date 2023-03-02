@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-deploy
+  labels:
+    name: web-app-deploy
+    app: portfolio-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: web-pod
+      app: portfolio-app
+  template:
+    metadata:
+      name: web-pod
+      labels:
+        name: web-pod
+        app: portfolio-app
+    spec:
+      containers:
+        - name: web-pod
+          image: oliveharobed/personal-website:v2
+          ports:
+            - containerPort: 80

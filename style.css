@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: rgb(87, 80, 133);
+
+  }
+ 
+.navbar{
+ display: flex; 
+ padding-top: 10px;
+ justify-content: space-evenly;
+}
+a:link {
+  color: rgb(87, 80, 133);
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(112, 60, 160, 0.87);
+}
+a:hover {
+  color: rgb(191, 154, 231);
+  cursor: pointer
+}
+.CV {
+  background-color: white;
+  color: rgb(148, 124, 187)!important;
+  border: 2px solid rgb(87, 80, 133);
+  border-bottom: 4px solid rgb(87, 80, 133);
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+} 
+.CV:hover {
+  color: rgb(204, 177, 234)!important
+}
+.container{
+  margin: 50px 10px;
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: center; 
+}
+.column {
+  flex: 1;
+  border: 1px solid rgb(204, 177, 234);
+  margin: 4px;
+  padding: 10px;
+  background:rgb(223, 222, 224);
+  border-radius: 8px;
+}
+.column:first-child{
+ align-items: center;
+ justify-content: center;
+ display: flex;
+} 
+img {
+  border-radius: 50%;
+  width: 100%;    
+}
+.img:hover {
+  cursor: pointer;
+}
+
+#projects li {
+    padding: 10px 0; 
+  }
+
+@media screen and (max-width: 980px) {
+  .container .column {
+  margin-bottom: 5px;
+  flex-basis: 40%;
+}
+}        
+@media screen and (max-width: 680px) {
+  .container .column {
+  flex-basis: 100%;
+  margin: 0 0 10px 0;
+}
+}         
